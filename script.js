@@ -4,7 +4,6 @@ const screen = document.getElementById("screen");
 for (const button of buttons) {
 	button.addEventListener("mouseup", (e) => {
 		if (e.target.id === "=") {
-			console.log(screen.innerText);
 			const result = eval(screen.innerText);
 			screen.innerText = result;
 		} else if (e.target.id === "sqrt") {
